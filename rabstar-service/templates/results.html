@@ -1,0 +1,16 @@
+<H1><center>Rabstar</center></H1>
+<br>
+<br>
+
+
+<form action="search">
+  <center> <input name="q" size="100" value="{{q}}"></center>
+  <br>
+ <center>  <input type="submit"></center>
+</form>
+
+<ul>
+  {% for item, score in results %}
+    <li>{{score|round(1)}} - {{item}}</li>
+  {% endfor %}
+</ul>
