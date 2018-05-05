@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ./partials/head %>
+</head>
+
+<header>
+    <% include ./partials/header %>
+</header>
+
+
+<body class="container">
+
+<main>
+
+<H1>ChainMap - Platform for Blockchain Developer's Growth</H1>
+
+<p>
+In 2017, we have seen 20M+ BlockChain Wallet worldwide and 100x growth in ICO market and analysts are expecting $60 billion blockchain market(100x from now) impacting trillion dollar industries from payment, government, healthcare, crowdfunding. BloackChain has the the ability to change all aspects of the digital economy. But BloackChain technology is not mature yet to handle challenges such as scalability, cost and cross-chain exchange. So we have not seen much real use cases to solve the real problems yet. So we as blockchain technology fans build ChainMap.org to support the community on use case analysis, finding solution and build connections with similar minds.
+<br>
+<ul>
+	<li>Community of blockchain developers 
+	<li>Training materials
+	<li>White Paper Search Engine 
+	<li>Challenge Events and Github which you can join and grow and get rewarded
+</ul>	
+</p>
+
+<h2>Signup (or <a href="/login">Login</a> if you already in)</h2>
+<form method="post" action="/register">
+    <p>
+    <label>Email:</label>        
+    <input type="text" name="email" size="60">
+    </p>
+    
+    <p>
+    <label>Password:</label>
+    <input type="text" name="password" size="60">
+    </p>
+    
+ <p>
+  <label>Primary Interest BlockChain Category:</label>    
+  <select name="primarycat">
+    <option value="PublicChainInfr">Public Chain Infrastructure</option>
+    <option value="EnterpriseChainInfr">Enterprise Chain Infrastructure</option>
+    <option value="Finance">Finance</option>
+    <option value="Data">Data</option>
+    <option value="AI">AI</option>
+    <option value="Identity">Identity</option>
+    <option value="CopyRight">CopyRight</option>
+    <option value="Social">Social</option>
+    <option value="IOT">IOT</option>
+    <option value="Law">Law</option>
+    <option value="Entertainment">Entertainment</option>
+    <option value="Game">Game</option>
+    <option value="RealEstate">RealEstate</option>
+    <option value="Charity">Charity</option>
+    <option value="Enterprise">Enterprise</option>
+    <option value="HealthCare">HealthCare</option>
+    <option value="Energy">Energy</option>
+    <option value="Agriculture">Agriculture</option>    
+  </select>
+    </p>
+    
+  <p>
+  <label>Seek partner?:</label>
+  <select name="partneryes">
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+  </select>
+    </p>
+    
+   <p>
+    <label>Team Need Description (if looking for partner):</label>
+    <input type="text" name="teamneeds" size="60">
+    </p>
+    
+   <p>
+    <label>Your Location:</label>
+    <input type="text" name="location" size="20">
+    </p>
+    
+    <input type="submit" value="signup">
+</form>
+
+
+</main>
+
+<footer>
+    <% include ./partials/footer %>
+</footer>
+
+</body>
+</html>
