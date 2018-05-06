@@ -41,7 +41,8 @@ CREATE TABLE `challenges` (
           `id` int(11) NOT NULL AUTO_INCREMENT,
           `type` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
         `description` varchar(2000) COLLATE utf8_unicode_ci NOT NULL,
-        `link` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
+        `eventlink` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
+        `learninginfo` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
         `name` varchar(150) COLLATE utf8_unicode_ci NOT NULL,
         `git` varchar(300) COLLATE utf8_unicode_ci NOT NULL,
         `created` datetime NOT NULL,
@@ -51,9 +52,9 @@ CREATE TABLE `challenges` (
 
 
 /*----Challenge Table Loading---*/
-INSERT INTO challenges (type, name, description, link, git, created) VALUES('coding', 'Nebulious Incentive Program Q1', "Nebulas officially announced the start of the Nebulas Incentive Program on April 27, 2018. From 00:00 on May 7th, 2018 to 00:00 on July 2nd, 2018, Beijing time, all developers and their referrers who successfully submit DApps on the Nebulas mainnet can receive NAS coin rewards.For developers, the Weekly Excellent Application rewards 10,000 NAS, and the Monthlyreward, 20,000 NAS. The total reward of this program amounts to 460,000 NAS (according to the price on May 1, it is more than $4.5 million).", 'https://nebulas.io/', 'https://www.reddit.com/r/nebulas/comments/8fi47r/nebulas_developers_questions_and_support_resources/',NOW());
+INSERT INTO challenges (type, name, description, eventlink, learninginfo, git, created) VALUES('coding', 'Nebulas Incentive Program Q1', "Nebulas officially announced the start of the Nebulas Incentive Program on April 27, 2018. From 00:00 on May 7th, 2018 to 00:00 on July 2nd, 2018, Beijing time, all developers and their referrers who successfully submit DApps on the Nebulas mainnet can receive NAS coin rewards.For developers, the Weekly Excellent Application rewards 10,000 NAS, and the Monthlyreward, 20,000 NAS. The total reward of this program amounts to 460,000 NAS (according to the price on May 1, it is more than $4.5 million).", 'https://incentive.nebulas.io/signup.html?invite=37J5U', 'https://www.reddit.com/r/nebulas/comments/8fi47r/nebulas_developers_questions_and_support_resources/','https://github.com/nebulasio',NOW());
 
-INSERT INTO challenges (type, name, description, link, git, created) VALUES('coding', 'Exchange Union', 'Check our White Paper (Overview) to get a general idea of what Exchange Union is about, how it functions along with examples of use cases. Dive into our Technical Paper to learn about the technological innovations which power Exchange Union.', 'https://www.exchangeunion.com/developer', 'https://github.com/ExchangeUnion/Docs/blob/master/How-to-contribute.md ',NOW());
+INSERT INTO challenges (type, name, description, eventlink, learninginfo, git, created) VALUES('coding', 'Exchange Union', 'Check our White Paper (Overview) to get a general idea of what Exchange Union is about, how it functions along with examples of use cases. Dive into our Technical Paper to learn about the technological innovations which power Exchange Union.', 'https://www.exchangeunion.com/developer', 'https://github.com/ExchangeUnion/Docs/blob/master/How-to-contribute.md','https://github.com/ExchangeUnion',NOW());
 
 /*----Material Table Loading---*/
 INSERT INTO materials (type, name, description, link, created) VALUES('training','Ethereum Homestead Documentation','This documentation is the result of an ongoing collaborative effort by volunteers from the Ethereum Community. Although it has not been authorized by the The Ethereum Foundation, we hope you will find it useful. We Welcome new Contrubtion','http://www.ethdocs.org/en/latest/index.html',NOW());

@@ -14,20 +14,20 @@
 
                  <table border="1" cellpadding="7" cellspacing="7">
 					  <tr>
-						<th width="50px">No</th>
-						<th>Name</th>
-						<th>Description</th>
-						<th>Link</th>
-						<th>Git</th>
+						<th width="50px"><center>No<center></th>
+						<th width="200px"><center>Name<center></th>
+						<th width="400px"><center>Event Invitation<center></th>
+						<th width="150px"><center>Join Event<center></th>
+						<th width="100px"><center>Learn<center></th>
 					  </tr>
 					  <% if(data.length){ 
 						for(var i = 0;i < data.length;i++) { %>
-					  <tr>
-						<td><%=(i+1)%></td>
-						<td><%=data[i].name%></td>
+					  <tr height="200px">
+						<td><center><%=(i+1)%></center></td>
+						<td><center><font size="5"><b><%=data[i].name%></b></font></center></td>
 						<td><%=data[i].description%></td>
-						<td><a href="<%=data[i].link%>">Event Link</a></td>
-						<td><a href="<%=data[i].git%>">Git</a></td>
+						<td><a href="<%=data[i].eventlink%>"><center><b>Take the challenge</b></center></a></td>
+						<td><a href="<%=data[i].git%>"><center>Git</center> </a><br> <a href="<%=data[i].learninginfo%>"><center>Learning Info</center> </a></td>
 					  </tr>
 			  		  <% }
   						}else{ %>
@@ -41,7 +41,7 @@
 </main>
 
 <footer>
-    <% include ./partials/footer %>
+    <% include ./partials/developer-footer %>
 </footer>
 
 </body>

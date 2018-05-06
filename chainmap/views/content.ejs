@@ -14,18 +14,18 @@
 
                  <table border="1" cellpadding="7" cellspacing="7">
 					  <tr>
-						<th width="50px">No</th>
-						<th>Name</th>
-						<th>Description</th>
-						<th>Link</th>
+						<th width="50px"><center>No</center></th>
+						<th width="200px"><center>Name</center></th>
+						<th width="300px"><center>Description</center></th>
+						<th width="100px"><center>Link</center></th>
 					  </tr>
 					  <% if(data.length){ 
 						for(var i = 0;i < data.length;i++) { %>
-					  <tr>
-						<td><%=(i+1)%></td>
-						<td><%=data[i].name%></td>
+					  <tr height="100px">
+						<td><center><%=(i+1)%></center></td>
+						<td><center><b><%=data[i].name%></b></center></td>
 						<td><%=data[i].description%></td>
-						<td><a href="<%=data[i].link%>">Link</a></td>
+						<td><center><a href="<%=data[i].link%>">Link</a></center></td>
 					  </tr>
 			  		  <% }
   						}else{ %>
@@ -39,7 +39,7 @@
 </main>
 
 <footer>
-    <% include ./partials/footer %>
+    <% include ./partials/developer-footer %>
 </footer>
 
 </body>
