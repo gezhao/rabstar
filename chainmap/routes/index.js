@@ -38,7 +38,7 @@ var client = new Client();
 //   });
 // });
 
-router.get('/search/:content', function(req, res, next) {
+router.get('/query/:content', function(req, res, next) {
 	//http://localhost:8983/solr/chainmap/select?fl=title&q=content:bitcoin&start=10
 	var url = 'http://localhost:8983/solr/chainmap/select?fl=title&q=content:'+ encodeURI(req.params.content) +'&wt=json';
 	console.log('query is ' + url);

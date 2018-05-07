@@ -13,6 +13,7 @@ target=/home/chainmap
 
 for ix in ${!hosts[*]}
 do
+	
 	echo "scp file to ${hosts[$ix]}"
     scp *.* gezhao@${hosts[$ix]}:$target
     scp ./bin/* gezhao@${hosts[$ix]}:$target/bin
